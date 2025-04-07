@@ -162,7 +162,7 @@
     <noscript>Enable JavaScript</noscript>
     
     
-    <div class="progress-bar-outer"><div class="progress-bar-inner" id="loading-inner"></div></div>
+    
   </div>
 
   <div id="error" class="screen" hidden>
@@ -228,7 +228,7 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
       const scaffolding = new Scaffolding.Scaffolding();
       scaffolding.width = 480;
       scaffolding.height = 360;
-      scaffolding.resizeMode = "preserve-ratio";
+      scaffolding.resizeMode = "dynamic-resize";
       scaffolding.editableLists = false;
       scaffolding.usePackagedRuntime = true;
       scaffolding.setup();
@@ -369,7 +369,7 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
       await scaffolding.loadProject(projectData);
       setProgress(1);
       loadingScreen.hidden = true;
-      if (false) {
+      if (true) {
         scaffolding.start();
       } else {
         launchScreen.hidden = false;
